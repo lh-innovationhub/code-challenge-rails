@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'English'
+
+# unless system('bundle exec rubocop --parallel --ignore-unrecognized-cops')
+#   puts $CHILD_STATUS
+#   exit(1)
+# end
+
+unless system('bundle exec spoom tc')
+  puts $CHILD_STATUS
+  exit(1)
+end
+
+unless system("bundle exec rails r 'Zeitwerk::Loader.eager_load_all'")
+  puts $CHILD_STATUS
+  exit(1)
+end
+
+# unless system('bundle exec brakeman')
+#   puts $CHILD_STATUS
+#   exit(1)
+# end
+
+puts "\n\n✅ ALL GOOD!"

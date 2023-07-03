@@ -1,0 +1,2 @@
+frontend: ./bin/webpack-dev-server
+backend: bundle exec puma -C config/puma.rb
