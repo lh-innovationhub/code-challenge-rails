@@ -34,7 +34,7 @@
     "fork-ts-checker-webpack-plugin": "^5.2.1",
     "lodash": "^4.17.20",
     "path": "^0.12.7",
-    "postcss": "^7",
+    "postcss": "^8",
     "regenerator-runtime": "^0.13.7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "tailwindcss-transitions": "^2.2.0",
